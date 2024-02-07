@@ -1,8 +1,10 @@
 <template>
-  <a-button @click="handleMessage">
-    button
-  </a-button>
-  <h2 style="fontSize:0.16rem">{{ num.count }}</h2>
+  <div class="main_index">
+    <button @click="handleMessage">
+      button
+    </button>
+    <h2 style="fontSize:0.16rem">{{ num.count }}</h2>
+  </div>
 </template>
 
 <script setup>
@@ -18,5 +20,8 @@ const handleMessage = () => {
 </script>
 
 <style>
-
+  .main_index{
+    border: 1px solid #000;
+    background: rgb(177, 177, 177);
+  }
 </style>

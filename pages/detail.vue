@@ -14,3 +14,9 @@
         layout:false
     }
 </script>   
+
+<style>
+    template{
+        border: 1px solid #165;
+    }
+</style>

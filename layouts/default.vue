@@ -2,8 +2,8 @@
   <div class="main">
     <AppLayout />
     <div class="headContent">
-      <AppHeader />
-      <div>-----</div>
+      <!-- <AppHeader /> -->
+      <div>---navigation---</div>
       <slot></slot>
     </div>
   </div>
