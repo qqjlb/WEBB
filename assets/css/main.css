@@ -1,0 +1,72 @@
+body,
+div,
+ul,
+ol,
+dl,
+dt,
+dd,
+li,
+dl,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font: 42px "\5B8B\4F53", Arial, Helvetica, sans-serif
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+body {
+    color: #000000;
+    background: #FFF;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+    height: 1px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -1px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #BA2636;
+    text-decoration: underline;
+}
+
+:root {
+    --primary-color: #316c72;
+    --dark-bg: #18181c;
+    --link: #007fff;
+    --jjext-color-brand: #1e80ff;
+    --jjext-color-brand-light: #e8f3ff;
+    --jjext-color-nav-title: #86909c;
+    --jjext-color-nav-popup-bg: #ffffff;
+    --jjext-color-primary: #1d2129;
+    --jjext-color-secondary-app: #4e5969;
+    --jjext-color-thirdly: #86909c;
+    --jjext-color-hover: #1e80ff;
+    --jjext-color-hover-thirdly: #86909c;
+    --jjext-color-dropdown-text: #1e80ff;
+    --jjext-color-divider: #e5e6eb;
+    --jjext-color-main-bg: #f4f5f5;
+
+}
