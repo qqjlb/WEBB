@@ -5,6 +5,7 @@
         </template>
         <template #content>
             <h1>content</h1>
+         
         </template>
     </NuxtLayout>
 </template>
@@ -13,6 +14,7 @@
     export default{
         layout:false
     }
+
 </script>   
 
 <style>

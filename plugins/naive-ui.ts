@@ -1,11 +1,14 @@
 import { setup } from '@css-render/vue3-ssr'
 import { defineNuxtPlugin } from '#app'
+import { setupStore } from '~/stores';
 
 export default defineNuxtPlugin((nuxtApp) => {
     if (process.server) {
         const { collect } = setup(nuxtApp.vueApp)
         const originalRenderMeta = nuxtApp.ssrContext?.renderMeta
+        //@ts-ignore
         nuxtApp.ssrContext = nuxtApp.ssrContext || {}
+        //@ts-ignore
         nuxtApp.ssrContext.renderMeta = () => {
             if (!originalRenderMeta) {
                 return {
@@ -14,6 +17,7 @@ export default defineNuxtPlugin((nuxtApp) => {
             }
             const originalMeta = originalRenderMeta()
             if ('then' in originalMeta) {
+                //@ts-ignore
                 return originalMeta.then((resolvedOriginalMeta) => {
                     return {
                         ...resolvedOriginalMeta,

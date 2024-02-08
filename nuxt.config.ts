@@ -22,7 +22,7 @@ export default defineNuxtConfig({
         mediaQuery: false, // 是否允许使用媒体查询，false媒体查询的代码可用，true不可用
         exclude: 'ignore',
         replace: true, // 替换包含rem的规则，而不是添加回退
-        minPixelValue: 1, // 需要转换的最小值，一般1px像素不转换，以上才转换
+        minPixelValue: 100, // 需要转换的最小值，一般1px像素不转换，以上才转换
         unitPrecision: 6, // 转换成rem单位的小数点后的保留位数
         selectorBalckList: ['van', 'el','a'], // 匹配不被转换为rem的选择器
       },

@@ -14,7 +14,7 @@ h4 {
     margin: 0;
     padding: 0;
     font-style: normal;
-    font: 42px "\5B8B\4F53", Arial, Helvetica, sans-serif
+    font-size: 18px;
 }
 
 ol,
@@ -31,7 +31,6 @@ img {
 body {
     color: #000000;
     background: #FFF;
-    text-align: center;
 }
 
 .clear {
@@ -47,10 +46,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #BA2636;
-    text-decoration: underline;
-}
+
 
 :root {
     --primary-color: #316c72;

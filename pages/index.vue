@@ -1,20 +1,17 @@
 <template>
   <div class="main_index">
+    <p>this is main page</p>
     <button @click="handleMessage">
       button
     </button>
-    <h2 style="fontSize:0.16rem">{{ num.count }}</h2>
+    
   </div>
 </template>
 
 <script setup>
-import { counteStore } from '@/stores/counter'
-const router = useRouter()
 
-const num = counteStore()
 const handleMessage = () => {
-  num.count++
-  // router.push('/about')
+
 }
 
 </script>
