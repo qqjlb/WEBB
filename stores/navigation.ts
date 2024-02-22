@@ -15,6 +15,7 @@ export const useNavStore = defineStore("nav",{
         navList:[
             {name:"break",path:"/"},
             {name:"detail",path:"/detail"},
+            {name:"about",path:"/about"},
             {name:"user-1",path:"/user-admin/1"},
             {name:"parent-child",path:"/parent/child"},
         ],

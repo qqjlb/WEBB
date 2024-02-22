@@ -4,7 +4,11 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
   ],
   devtools: { enabled: true },
-  plugins: ['@/plugins/rem'],
+  plugins: [
+    '@/plugins/rem',
+    '@/plugins/directive/focus',
+    '@/plugins/menu/globalMenu'
+  ],
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {

@@ -7,7 +7,11 @@
 </template>
 
 <script setup>
+function init(){
+  
+}
 
+init()
 </script>
 
 <style lang="scss" scoped>

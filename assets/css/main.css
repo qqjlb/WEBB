@@ -46,7 +46,44 @@ a {
     text-decoration: none;
 }
 
+/*自定义菜单相关css*/
 
+menu{
+    --b: 4px;
+    display: none;
+    width: max-content;
+    padding-bottom: var(--b);
+    background: #eee;
+    margin: 0;
+    position: absolute;
+    animation: menushow cubic-bezier(0, 0.6, 1, 0.6) 1s;  
+}
+.menubox{
+    position:absolute;
+    top:0;
+    height:100%;
+    width:100%;
+}
+.menubox menu{
+    display: block;
+    padding-left: 0;
+    border: 1px solid #000;
+}
+.menubox menu div{
+    cursor: pointer;
+    margin:var(--b) var(--b) 0 var(--b);
+}
+.menubox menu div:hover{
+    background: #555;
+}
+@keyframes menushow{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 :root {
     --primary-color: #316c72;

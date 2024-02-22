@@ -1,6 +1,6 @@
 import { setup } from '@css-render/vue3-ssr'
 import { defineNuxtPlugin } from '#app'
-import { setupStore } from '~/stores';
+
 
 export default defineNuxtPlugin((nuxtApp) => {
     if (process.server) {
